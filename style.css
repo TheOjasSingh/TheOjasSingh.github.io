@@ -35,6 +35,9 @@ body{
     text-decoration: none;
     box-sizing: content-box;
 }
+.logo:hover{
+    opacity: 20%;
+}
 .btn{
     padding: 12px 16px;
     font-size: 16px;
