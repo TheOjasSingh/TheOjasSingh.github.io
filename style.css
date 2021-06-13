@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +12,8 @@ html{
     padding: 10px;
 }
 body{
-    background: linear-gradient(to bottom, #66ffff 0%, #99ccff 100%);
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     height: 100%;
     display: flex;
     align-items: center;
@@ -21,6 +23,18 @@ body{
     display: flex;
     justify-content: center;
 }
+.logo{
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    font-family: 'Mr Bedfort', cursive;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    box-sizing: content-box;
+}
 .btn{
     padding: 12px 16px;
     font-size: 16px;
@@ -28,7 +42,7 @@ body{
     position: absolute;
 }
 .btn:hover{
-    background-color:white;
+    background-color:#090979;
 }
 .sidebar{
     height: 100%;
@@ -37,7 +51,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: linear-gradient(to bottom, #66ffff 0%, #99ccff 100%);
+    background-color: black;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -46,12 +60,12 @@ body{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color: white;
     display: block;
     transition: 0.3s;
 }
 .sidebar a:hover{
-    color:white;
+    opacity: 20%;
 }
 .sidebar .closebtn{
     position: absolute;
@@ -63,13 +77,13 @@ body{
 .openbtn{
     font-size: 20px;
     cursor: pointer;
-    background-color: #66ffff;
+    background-color: transparent;
     color: black;
     padding: 10px 15px;
     border: none;
 }
 .openbtn:hover{
-    background-color: white;
+    opacity: 20%;
 }
 #main{
     transition: margin-left .5;
