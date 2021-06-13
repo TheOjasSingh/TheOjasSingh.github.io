@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+html{
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+}
+body{
+    background: linear-gradient(to bottom, #66ffff 0%, #99ccff 100%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top_img{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+}
+.btn:hover{
+    background-color:white;
+}
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: linear-gradient(to bottom, #66ffff 0%, #99ccff 100%);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover{
+    color:white;
+}
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #66ffff;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover{
+    background-color: white;
+}
+#main{
+    transition: margin-left .5;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a{font-size: 18px;}
+    
+}
+.text-js{
+    opacity: 0;
+  }
+.cursor{
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -5px;
+    width: 2px;
+    background-color: white;
+    z-index: 1;
+    animation: flash 0.5s none infinite alternate;
+  }
+@keyframes flash{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+.headline{
+    margin: 20px;
+    color: black;
+    font-size: 32px;
+    text-align: center;
+  }
+.h1{
+        letter-spacing: 1.6px;
+        font-weight: 300;
+  }
